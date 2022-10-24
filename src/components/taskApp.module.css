@@ -1,3 +1,29 @@
 .taskApp {
-  /* Sample */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 6% auto;
+}
+.taskApp > div:nth-child(1) {
+  background: #b92b27;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  );
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  );
+
+  padding-bottom: 20px;
+  color: white;
+}
+
+.taskTitle {
+  text-align: center;
+  border: 1px solid black;
 }

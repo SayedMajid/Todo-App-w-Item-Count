@@ -1,7 +1,25 @@
 .tasks {
-  /* sample */
+ margin-top: 20px;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ padding: 0 20px 10px;
 }
 
 .empty {
-  /* sample */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.empty > p {
+  justify-self: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.empty > img {
+  align-self: center;
+  height: 200px;
+  width: 200px;
 }

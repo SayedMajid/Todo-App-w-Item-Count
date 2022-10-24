@@ -1,3 +1,31 @@
-.addTask {
-  /* Sample */
+.todoForm {
+  display: flex;
+  gap: 8px;
+  height: 32px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.todoForm > input {
+  flex: 1;
+  border-radius: 4px;
+  border: 2px solid green;
+  padding-left: 8px;
+}
+
+input .duplicate {
+  border: 2px solid red;
+}
+
+.todoForm > input:focus {
+  outline: 0;
+}
+
+.todoForm > button {
+  width: 52px;
+  border: 0;
+  border-radius: 4px;
+  background-color: rgb(65, 147, 65);
+  color: white;
+  font-size: 15px;
 }

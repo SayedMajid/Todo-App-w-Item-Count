@@ -1,3 +1,33 @@
 .task {
-  /* Sample  */
+  display: flex;
+  justify-content: space-between;
+}
+
+.task > div {
+  display: flex;
+}
+
+.task > div:nth-child(1) {
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.task > div:nth-child(1) > input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: green;
+}
+
+.task > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.task > div:nth-child(2) > button {
+  border: 0;
+  background: transparent;
+  border-radius: 4px;
 }

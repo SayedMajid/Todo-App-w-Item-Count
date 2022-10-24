@@ -1,16 +1,20 @@
 import React from "react";
 import styles from "./taskHeader.module.css";
 
-const TaskHeader = () => {
-  // sample values to be replaced
-  let totalTask = 0;
-  let unCompletedTask = 0;
 
-  // NOTE: do not delete `data-cy` key value pair
+const TaskHeader = ({todo}) => {
+  const notCompleted = todo.filter((el) => el.done === false);
+  let totalTask = todo.length;
+  let unCompletedTask = notCompleted.length;
+
   return (
     <div data-cy="task-header" className={styles.taskHeader}>
-      <b data-cy="header-remaining-task">{unCompletedTask}</b>
-      <b data-cy="header-total-task">{totalTask}</b>
+      <div>
+        <p className={styles.taskHeader}>Todo App with counter</p>
+      </div>
+      <div className={styles.taskStatus} >
+        {`Tasks ${unCompletedTask} remaining of total ${totalTask} tasks`}
+      </div>
     </div>
   );
 };
